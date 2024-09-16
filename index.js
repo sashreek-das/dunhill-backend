@@ -11,6 +11,11 @@ const rootRouter = require("./routes/index");
 app.use("/api/v1/", rootRouter); // Added a forward slash at the beginning
 
 const PORT = 3004;
-app.listen(PORT, () => {
-  console.log(`Server running at ${PORT}`);
+
+app.get("/", (req, res) => {
+    res.json({ "asjfoi": "fwef" });
 });
+app.listen(PORT, () => {
+    console.log(`Server running at ${PORT}`);
+});
+
